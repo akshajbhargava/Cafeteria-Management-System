@@ -57,3 +57,43 @@ Before you begin, ensure you have the following installed:
 ## 🚀 Installation & Setup
 
 ### Step 1: Clone the Repository
+
+### Step 2: Install Python Dependencies
+
+### Step 3: Configure MySQL
+
+**Start MySQL Server:**
+
+**Windows:**
+
+**Mac:**
+
+**Linux:**
+
+**Update Database Configuration (if needed):**
+
+Edit `database.py` and modify the credentials if your MySQL setup is different:
+
+DB_CONFIG = {
+'host': '127.0.0.1', # Change if using remote MySQL
+'user': 'root', # Your MySQL username
+'password': 'root', # Your MySQL password
+'database': 'cafeteria_db' # Database name (auto-created)
+}
+
+text
+
+### Step 4: Run the Application
+streamlit run app.py
+
+text
+
+The application will automatically:
+- ✅ Create the `cafeteria_db` database
+- ✅ Create all 7 required tables
+- ✅ Insert default admin user
+- ✅ Add 8 sample menu items
+
+Open your browser and navigate to: [**http://localhost:8501**](http://localhost:8501)
+
+
